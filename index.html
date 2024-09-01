@@ -62,82 +62,123 @@ Purchase : http://www.ncodeart.com/
 	<link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+
+
+	<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .nc-main {
+            position: relative;
+            height: 100vh;
+            background: url('images/bg-40.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .nc-main--bgoverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .nc-intropage {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        .nc-logo img {
+            width: 100px;
+        }
+
+        .introtext h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .introtext p {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        .icon-widget {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .icon-item {
+            margin: 1rem;
+            text-align: center;
+        }
+
+        .icon-item i {
+            font-size: 2rem;
+        }
+
+        .nc-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+        }
+
+        .nc-footer .nc-sociallink a {
+            margin: 0 0.5rem;
+        }
+
+        .nc-footer .copyright-txt {
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .introtext h1 {
+                font-size: 1.75rem;
+            }
+
+            .introtext p {
+                font-size: 1rem;
+            }
+
+            .icon-item i {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .introtext h1 {
+                font-size: 1.5rem;
+            }
+
+            .introtext p {
+                font-size: 0.875rem;
+            }
+
+            .icon-item i {
+                font-size: 1.25rem;
+            }
+
+            .nc-logo img {
+                width: 80px;
+            }
+        }
+    </style>
 	
-		<style>
-		/* Flexbox adjustments for responsiveness */
-		.icon-widget {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			flex-wrap: wrap;
-		}
-
-		.icon-item {
-			margin: 20px;
-			color: #fff;
-			flex: 1;
-			min-width: 80px;
-			max-width: 120px;
-		}
-
-		.icon-item p {
-			margin-top: 10px;
-			font-size: 14px;
-			color: #fff;
-		}
-
-		/* Media Query for Smaller Screens */
-		@media (max-width: 768px) {
-			.icon-widget {
-				flex-direction: column;
-			}
-
-			.icon-item {
-				margin: 10px 0;
-				max-width: 100px;
-			}
-
-			.introtext h1 {
-				font-size: 30px;
-			}
-
-			.introtext p {
-				font-size: 18px;
-			}
-
-			.nc-navigation--ul .nc-navigation--li h3 {
-				font-size: 18px;
-			}
-
-			.nc-main--pagewrapper {
-				padding: 20px;
-			}
-
-			.container {
-				padding: 15px;
-			}
-		}
-
-		/* Further customizations for better display on mobile */
-		@media (max-width: 480px) {
-			.icon-item i {
-				font-size: 36px;
-			}
-
-			.nc-titlewrapper--tile {
-				font-size: 24px;
-			}
-
-			.nc-titlewrapper--subtitle {
-				font-size: 14px;
-			}
-
-			.nc-logo img {
-				width: 80px;
-			}
-		}
-	</style>
+		
 
 </head>
 <body>
@@ -203,23 +244,48 @@ Purchase : http://www.ncodeart.com/
 
 							<div class="nc-icons animated s008 mr-tb-80" data-nc-md="mr-tb-medium" data-nc-sm="mr-tb-small" data-nc-sm="mini" data-animIn="zoomIn|0.4" data-animOut="fadeOut|0.1">
                                 <div class="icon-widget">
-                                    <!-- Healthcare Icon -->
-                                    <div class="icon-item">
-                                        <i class="fas fa-heartbeat" style="font-size: 48px; color: #fff;"></i>
-                                        <p></p>
-                                    </div>
+                                    
+									<a href="coming_soon.html" target="_blank" class="icon-link">
+										<div class="icon-item">
+											<i class="fas fa-list" style="font-size: 48px; color: #fff;"></i>
+											<p></p>
+										</div>
+									</a>
                             
                                     <!-- Global Care Icon -->
-                                    <div class="icon-item">
-                                        <i class="fas fa-globe" style="font-size: 48px; color: #fff;"></i>
-                                        <p></p>
-                                    </div>
+									<a href="https://holidaycity.aranea.in" class="icon-link">
+										<div class="icon-item">
+											<i class="fas fa-landmark" style="font-size: 48px; color: #fff;"></i>
+											<p></p>
+										</div>
+									</a>
                             
                                     <!-- Life Support Icon -->
-                                    <div class="icon-item">
-                                        <i class="fas fa-life-ring" style="font-size: 48px; color: #fff;"></i>
-                                        <p></p>
-                                    </div>
+									<a href="https://healthcare.aranea.in" class="icon-link">
+										<div class="icon-item">
+											<i class="fas fa-hospital" style="font-size: 48px; color: #fff;"></i>
+											<!-- <i class="fas fa-heart-pulse" style="font-size: 48px; color: #fff;"></i> -->
+											<p></p>
+										</div>
+									</a>
+
+									<a href="coming_soon.html" target="_blank" class="icon-link">
+										<div class="icon-item">
+											<i class="fas fa-exchange-alt" style="font-size: 48px; color: #fff;"></i>
+											<p></p>
+										</div>
+									</a>
+
+
+									<!-- Life Support Icon -->
+                                   
+									<a href="https://community.aranea.in" class="icon-link">
+										<div class="icon-item">
+											<i class="fas fa-users" style="font-size: 48px; color: #fff;"></i>
+											<!-- <i class="fas fa-heart-pulse" style="font-size: 48px; color: #fff;"></i> -->
+											<p></p>
+										</div>
+									</a>
                                 </div>
                             </div>
 
@@ -259,7 +325,7 @@ Purchase : http://www.ncodeart.com/
                             </style>
 
 							<div class="align-c">
-								<a href="#" data-popup="subscribe" class="nc-trigger btn btn-primary large solid bdr-1 round txt-upper f-1 animated s008" data-animIn="fadeInUp|0.5" data-animOut="fadeOutUp|0.5">Subscribe</a>	
+								<a href="#" data-popup="subscribe" class="nc-trigger btn btn-primary large solid bdr-1 round txt-upper f-1 animated s008" data-animIn="fadeInUp|0.5" data-animOut="fadeOutUp|0.5">Join Community</a>	
 							</div>
 
 						</div>
