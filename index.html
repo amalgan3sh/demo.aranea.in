@@ -260,53 +260,91 @@ Purchase : http://www.ncodeart.com/
 							</div><!-- / INTRO TEXT -->
 
 							<div class="nc-icons animated s008 mr-tb-80" data-nc-md="mr-tb-medium" data-nc-sm="mr-tb-small" data-nc-sm="mini" data-animIn="zoomIn|0.4" data-animOut="fadeOut|0.1">
-                                <div class="icon-widget">
-                                    
+								<div class="icon-widget">
+									<!-- Gods Line Icon -->
 									<a href="coming_soon.html" target="_blank" class="icon-link" title="Gods Line">
 										<div class="icon-item">
 											<i class="fas fa-list" style="font-size: 48px; color: #fff;"></i>
-											<p></p>
+											<span class="hover-text">Explore Now</span>
 										</div>
 									</a>
-                            
-                                    <!-- Global Care Icon -->
+							
+									<!-- Nest Holiday City Icon -->
 									<a href="https://holidaycity.aranea.in" class="icon-link" title="Nest Holiday City">
 										<div class="icon-item">
 											<i class="fas fa-landmark" style="font-size: 48px; color: #fff;"></i>
-											<p></p>
+											<span class="hover-text">Explore Now</span>
 										</div>
 									</a>
-                            
-                                    <!-- Life Support Icon -->
+							
+									<!-- Healthcare Icon -->
 									<a href="https://healthcare.aranea.in" class="icon-link" title="Healthcare">
 										<div class="icon-item">
 											<i class="fas fa-hospital" style="font-size: 48px; color: #fff;"></i>
-											<!-- <i class="fas fa-heart-pulse" style="font-size: 48px; color: #fff;"></i> -->
-											<p></p>
+											<span class="hover-text">Explore Now</span>
 										</div>
 									</a>
-
+							
+									<!-- Barter Icon -->
 									<a href="coming_soon.html" target="_blank" class="icon-link" title="Barter">
 										<div class="icon-item">
 											<i class="fas fa-exchange-alt" style="font-size: 48px; color: #fff;"></i>
-											<p></p>
+											<span class="hover-text">Explore Now</span>
 										</div>
 									</a>
-
-
-									<!-- Life Support Icon -->
-                                   
+							
+									<!-- Community Icon -->
 									<a href="https://community.aranea.in" class="icon-link" title="Community">
 										<div class="icon-item">
 											<i class="fas fa-users" style="font-size: 48px; color: #fff;"></i>
-											<!-- <i class="fas fa-heart-pulse" style="font-size: 48px; color: #fff;"></i> -->
-											<p></p>
+											<span class="hover-text">Explore Now</span>
 										</div>
 									</a>
-                                </div>
-                            </div>
+								</div>
+							</div>
 
                             <style>
+								.icon-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;  /* Ensure that elements do not overflow the icon's area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Adjust height as necessary */
+}
+
+.icon-item i {
+    font-size: 48px;
+    color: #fff;
+    transition: opacity 0.3s ease; /* Smooth transition for fading */
+    z-index: 1; /* Ensure the icon is above the text initially */
+    opacity: 1; /* Icon is fully visible initially */
+}
+
+.hover-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+    opacity: 0; /* Text is initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition for fading in */
+    z-index: 0; /* Text is below the icon initially */
+    pointer-events: none; /* Text does not block the link */
+}
+
+.icon-item:hover i {
+    opacity: 0; /* Icon fades out on hover */
+}
+
+.icon-item:hover .hover-text {
+    opacity: 1; /* Text becomes visible on hover */
+    z-index: 2; /* Bring text above the icon on hover */
+}
                                 .icon-widget {
                                     display: flex;
                                     justify-content: center;
