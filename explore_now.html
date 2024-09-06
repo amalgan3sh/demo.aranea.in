@@ -279,7 +279,7 @@ Purchase : http://www.ncodeart.com/
 									<div class="col-md-4 mb-5">
 										<div class="content-box text-center">
 											<div class="text-box">
-												<i class="fas fa-globe fa-2x"></i>
+												<img src="images/gods_line.png" alt="Gods Line" class="custom-icon">
 												<p style="font-size: 20px;">Gods Line: The Nest Eco City</p>
 												<a href="pages/gods_line_contribute.html" class="btn btn-primary btn-custom">Contribute Now</a>
 											</div>
@@ -289,7 +289,7 @@ Purchase : http://www.ncodeart.com/
 									<div class="col-md-4 mb-4">
 										<div class="content-box text-center">
 											<div class="text-box">
-												<i class="fas fa-tree fa-2x"></i>
+												<img src="images/teak_forest.png" alt="Teak Forest" class="custom-icon">
 												<p style="font-size: 20px;">Teak Forest: The Nest Holiday City</p>
 												<a href="https://holidaycity.aranea.in/survey" class="btn btn-primary btn-custom">Contribute Now</a>
 											</div>
@@ -299,7 +299,7 @@ Purchase : http://www.ncodeart.com/
 									<div class="col-md-4 mb-4">
 										<div class="content-box text-center">
 											<div class="text-box">
-												<i class="fas fa-users fa-2x"></i>
+												<img src="images/aranea_community.png" alt="Social Community" class="custom-icon">
 												<p style="font-size: 20px;">Social Community</p>
 												<a href="https://community.aranea.in" class="btn btn-primary btn-custom">Join Now</a>
 											</div>
@@ -311,7 +311,7 @@ Purchase : http://www.ncodeart.com/
 									<div class="col-md-4 mb-4">
 										<div class="content-box text-center">
 											<div class="text-box">
-												<i class="fas fa-shipping-fast fa-2x"></i>
+												<img src="images/healthcare.png" alt="Healthcare Import and Export" class="custom-icon">
 												<p style="font-size: 20px;">Healthcare Import and Export Solutions</p>
 												<a href="https://user.lakshmipharmaceuticals.com" class="btn btn-primary btn-custom">Contribute Now</a>
 											</div>
@@ -321,7 +321,7 @@ Purchase : http://www.ncodeart.com/
 									<div class="col-md-4 mb-4">
 										<div class="content-box text-center">
 											<div class="text-box">
-												<i class="fas fa-hand-holding-medical fa-2x"></i>
+												<img src="images/healthcare.png" alt="Healthcare Investment" class="custom-icon">
 												<p style="font-size: 20px;">Healthcare Investment Platform</p>
 												<a href="https://healthcare.aranea.in" class="btn btn-primary btn-custom">Contribute Now</a>
 											</div>
@@ -331,7 +331,7 @@ Purchase : http://www.ncodeart.com/
 									<div class="col-md-4 mb-4">
 										<div class="content-box text-center">
 											<div class="text-box">
-												<i class="fas fa-lightbulb fa-2x"></i>
+												<i class="fas fa-lightbulb fa-4x" style="color: #ffc107;"></i> <!-- Using Font Awesome icon for Technology -->
 												<p style="font-size: 20px;">Technology and Innovations</p>
 												<a href="coming_soon.html" class="btn btn-primary btn-custom">Contribute Now</a>
 											</div>
@@ -339,6 +339,71 @@ Purchase : http://www.ncodeart.com/
 									</div>
 								</div>
 							</div>
+							<style>
+.custom-icon, .text-center i {
+    width: 100px; /* Size of images */
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px auto; /* Center the images */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom in/out */
+}
+
+.text-box {
+    margin-top: 20px;
+}
+
+.text-box p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* Zoom effect on card hover */
+.content-box:hover .custom-icon, 
+.content-box:hover .text-center i {
+    transform: scale(1.2); /* Zooms the icon/image */
+}
+
+/* Return to normal size when hover is removed */
+.custom-icon, 
+.text-center i {
+    transform: scale(1); /* Default size */
+}
+
+.btn-custom {
+    margin-top: 15px;
+    padding: 10px 20px; /* Add padding for the button */
+    font-size: 16px; /* Adjust font size of button */
+}
+
+/* Optional: Add some shadow to the content-box */
+.content-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.content-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a little shadow on hover */
+}
+
+/* Media Queries to make it responsive */
+@media (max-width: 768px) {
+    .custom-icon, .text-center i {
+        width: 80px; /* Reduce size for smaller screens */
+        height: 80px;
+    }
+
+    .text-box p {
+        font-size: 18px; /* Adjust text size for smaller screens */
+    }
+
+    .btn-custom {
+        font-size: 14px;
+    }
+}
+							</style>
 							
 							<!-- INTRO TEXT -->
 							<div class="introtext typo-light align-c">
